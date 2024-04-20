@@ -1,0 +1,1 @@
+db.grades.find({ "products.score": { $gte: 59  } })
