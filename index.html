@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB CRUD Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Avinash & Girish Project</h1>
+	<h2>MongoDB CRUD Operations</h2>
+    <div>
+        <h2>Create Document</h2>
+        <input type="text" id="createData" placeholder="key=value">
+        <button onclick="createDocument()">Create</button>
+    </div>
+    <div>
+        <h2>Read Documents</h2>
+        <input type="text" id="readFilter" placeholder="key=value">
+        <button onclick="readDocuments()">Read</button>
+        <pre id="readResult"></pre>
+    </div>
+    <div>
+        <h2>Update Documents</h2>
+        <input type="text" id="updateFilter" placeholder="filter key=value">
+        <input type="text" id="updateData" placeholder="update key=value">
+        <button onclick="updateDocuments()">Update</button>
+    </div>
+    <div>
+        <h2>Delete Documents</h2>
+        <input type="text" id="deleteFilter" placeholder="key=value">
+        <button onclick="deleteDocuments()">Delete</button>
+    </div>
+    <div>
+        <h2>Display All Documents</h2>
+        <button onclick="displayAllDocuments()">Display All</button>
+        <pre id="displayAllResult"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
